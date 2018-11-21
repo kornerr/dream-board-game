@@ -2,22 +2,22 @@
 local camera = main.application.camera
 local mouse = main.application.mouse
 
--- Set background color to green initially.
-camera.clearColor = {0, 1, 0}
+-- Set background color to black initially.
+camera.clearColor = {0, 0, 0}
 
 -- Track current color.
-local colorIsGreen = true
+local colorIsBlack = true
 
--- Define function to toggle background color between green and red.
+-- Define function to toggle background color between black and white.
 local function toggleColor()
     -- Toggle.
-    colorIsGreen = not colorIsGreen
+    colorIsBlack = not colorIsBlack
     -- Apply.
-    if colorIsGreen
+    if colorIsBlack
     then
-        camera.clearColor = {0, 1, 0}
+        camera.clearColor = {0, 0, 0}
     else
-        camera.clearColor = {1, 0, 0}
+        camera.clearColor = {1, 1, 1}
     end
 end
 
